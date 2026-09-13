@@ -1,0 +1,80 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Inter, sans-serif; background: #EAF0EA; color: #1B2B22; }
+
+.auth-page { display: flex; align-items: center; justify-content: center; min-height: 100vh; }
+.auth-card { background: #fff; padding: 30px; border-radius: 6px; width: 320px; display: flex; flex-direction: column; gap: 8px; }
+.auth-card label { font-size: 12px; color: #56685D; margin-top: 8px; }
+.auth-card input { padding: 8px; border: 1px solid #C3D0C2; border-radius: 4px; }
+.auth-card button { margin-top: 14px; padding: 10px; background: #1B2B22; color: #fff; border: none; border-radius: 4px; cursor: pointer; }
+.auth-error { color: #A23B2E; font-size: 13px; }
+.auth-switch { font-size: 13px; text-align: center; margin-top: 10px; }
+
+.dashboard { max-width: 900px; margin: 0 auto; padding: 24px; }
+.masthead { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; }
+
+.summary-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-bottom: 20px; }
+.stamp-card { background: #fff; border: 1px solid #DCE5DA; border-radius: 4px; padding: 14px 16px; }
+.stamp-label { font-size: 12px; color: #56685D; text-transform: uppercase; margin-bottom: 6px; }
+.stamp-value { font-size: 22px; font-weight: 600; }
+.stamp-value.credit { color: #2B6B49; }
+.stamp-value.debit { color: #A23B2E; }
+
+.panel { background: #fff; border: 1px solid #DCE5DA; border-radius: 4px; padding: 16px; margin-bottom: 20px; }
+
+.entry-form { background: #F1E6C8; border-radius: 4px; padding: 16px; margin-bottom: 20px; }
+.form-grid { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 10px; align-items: end; }
+.field label { display: block; font-size: 11px; color: #56685D; margin-bottom: 4px; }
+.field input, .field select { width: 100%; padding: 8px; border: 1px solid #C3D0C2; border-radius: 4px; }
+.type-toggle { display: flex; border: 1px solid #C3D0C2; border-radius: 4px; overflow: hidden; }
+.type-toggle button { flex: 1; padding: 8px; border: none; background: #fff; cursor: pointer; }
+.type-toggle button.active.expense { background: #A23B2E; color: #fff; }
+.type-toggle button.active.income { background: #2B6B49; color: #fff; }
+.form-actions { grid-column: 1 / -1; display: flex; justify-content: flex-end; gap: 8px; margin-top: 6px; }
+.form-error { color: #A23B2E; font-size: 13px; }
+.btn-primary, .btn-ghost { padding: 8px 14px; border-radius: 4px; cursor: pointer; }
+.btn-primary { background: #1B2B22; color: #fff; border: none; }
+.btn-ghost { background: transparent; border: 1px solid #C3D0C2; }
+
+table.ledger { width: 100%; border-collapse: collapse; background: #fff; }
+table.ledger th, table.ledger td { padding: 10px; text-align: left; border-bottom: 1px solid #DCE5DA; font-size: 13.5px; }
+.amount-credit { color: #2B6B49; font-weight: 600; }
+.amount-debit { color: #A23B2E; font-weight: 600; }
+.empty-row, .empty-chart { text-align: center; color: #56685D; padding: 20px; }
+.filter-bar {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  flex-wrap: wrap;
+  background: #fff;
+  border: 1px solid #DCE5DA;
+  border-radius: 4px;
+  padding: 12px 14px;
+  margin-bottom: 14px;
+}
+.filter-bar input[type="text"] {
+  flex: 1;
+  min-width: 160px;
+  padding: 7px 10px;
+  border: 1px solid #C3D0C2;
+  border-radius: 4px;
+}
+.filter-bar select,
+.filter-bar input[type="date"] {
+  padding: 7px 8px;
+  border: 1px solid #C3D0C2;
+  border-radius: 4px;
+}
+.filter-bar span {
+  font-size: 13px;
+  color: #56685D;
+}
+.budget-list { margin-bottom: 16px; }
+.budget-row { margin-bottom: 14px; }
+.budget-row-top { display: flex; justify-content: space-between; align-items: center; font-size: 13.5px; margin-bottom: 4px; }
+.budget-bar-bg { background: #DCE5DA; border-radius: 6px; height: 8px; overflow: hidden; }
+.budget-bar-fill { background: #2B6B49; height: 100%; transition: width 0.3s ease; }
+.budget-bar-fill.over { background: #A23B2E; }
+.budget-warning { color: #A23B2E; font-size: 12px; margin: 4px 0 0; }
+.budget-form { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+.budget-form select, .budget-form input { padding: 8px; border: 1px solid #C3D0C2; border-radius: 4px; }
+.budget-form input { flex: 1; min-width: 140px; }
